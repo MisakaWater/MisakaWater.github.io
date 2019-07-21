@@ -85,6 +85,17 @@
 
 
 <link rel="stylesheet" href="/css/style.css">
+<script>
+	async function testSync() {
+     const response = await new Promise(resolve => {
+         setTimeout(() => {
+             resolve("async await test...");
+          }, 1000);
+     });
+     console.log(response);
+}
+testSync();
+</script>
 </head>
 <body class="is-2-column">
     <nav class="navbar navbar-main">
@@ -92,7 +103,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="MisakaWaterBlog" height="28">
+                <img src="https://avatars1.githubusercontent.com/u/29174785?s=32" alt="MisakaWaterBlog" height="28">
             
             </a>
         </div>
@@ -416,7 +427,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="MisakaWaterBlog" height="28">
+                    <img src="https://avatars1.githubusercontent.com/u/29174785?s=32" alt="MisakaWaterBlog" height="28">
                 
                 </a>
                 <p class="is-size-7">
@@ -543,6 +554,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 <script src="/js/main.js" defer></script>
+
 
     
     <div class="searchbox ins-search">
