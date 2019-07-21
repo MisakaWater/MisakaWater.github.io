@@ -35,10 +35,11 @@ var defUrl = window.location.href.split('#')[0]; //默认url
 //循环动画
 function UrlLoop(speed, arr, defUrl) {
 
-
     var e = window.event;
-    obj = e.target || e.srcElement;
-    e.path[0].innerText = "stop";
+    if (e != undefined) {
+        obj = e.target || e.srcElement;
+        e.path[0].innerText = "stop";
+    }
     //上面:
     //选择触发方法的元素
 
@@ -63,21 +64,21 @@ function UrlLoop(speed, arr, defUrl) {
 function print_nav_timing_data() {
     // Use getEntriesByType() to just get the "navigation" events
     var perfEntries = performance.getEntriesByType("navigation");
-  
-    for (var i=0; i < perfEntries.length; i++) {
-      console.log("= Navigation entry[" + i + "]");
-      var p = perfEntries[i];
-      // dom Properties
-      console.log("DOM content loaded = " + (p.domContentLoadedEventEnd - p.domContentLoadedEventStart));
-      console.log("DOM complete = " + p.domComplete);
-      console.log("DOM interactive = " + p.interactive);
-  
-      // document load and unload time
-      console.log("document load = " + (p.loadEventEnd - p.loadEventStart));
-      console.log("document unload = " + (p.unloadEventEnd - p.unloadEventStart));
-  
-      // other properties
-      console.log("type = " + p.type);
-      console.log("redirectCount = " + p.redirectCount);
+
+    for (var i = 0; i < perfEntries.length; i++) {
+        console.log("= Navigation entry[" + i + "]");
+        var p = perfEntries[i];
+        // dom Properties
+        console.log("DOM content loaded = " + (p.domContentLoadedEventEnd - p.domContentLoadedEventStart));
+        console.log("DOM complete = " + p.domComplete);
+        console.log("DOM interactive = " + p.interactive);
+
+        // document load and unload time
+        console.log("document load = " + (p.loadEventEnd - p.loadEventStart));
+        console.log("document unload = " + (p.unloadEventEnd - p.unloadEventStart));
+
+        // other properties
+        console.log("type = " + p.type);
+        console.log("redirectCount = " + p.redirectCount);
     }
-  }
+}
