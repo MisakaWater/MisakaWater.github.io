@@ -2,7 +2,7 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>归档: 2019/7 - 依然划水Blog</title>
+<title>标签: Mysql - 依然划水Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -10,7 +10,7 @@
     <meta name="description" content="好康的、好玩的、有趣的">
 <meta property="og:type" content="website">
 <meta property="og:title" content="依然划水Blog">
-<meta property="og:url" content="127.0.0.1/archives/2019/07/index.html">
+<meta property="og:url" content="127.0.0.1/tags/Mysql/index.html">
 <meta property="og:site_name" content="依然划水Blog">
 <meta property="og:description" content="好康的、好玩的、有趣的">
 <meta property="og:locale" content="zh-CN">
@@ -126,37 +126,77 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main">
-
-<div class="card widget">
+                <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        七月 2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-07-21T14:50:00.000Z">2019-07-21</time>
-                        <a href="/2019/07/21/JS实现URL变换/" class="has-link-black-ter is-size-6">JS 实现 URL 变换</a>
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/编程/">编程</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-        </div>
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">标签</a></li>
+            <li class="is-active"><a href="#" aria-current="page">Mysql</a></li>
+        </ul>
+        </nav>
     </div>
 </div>
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-04-03T10:28:00.000Z">2020-04-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/编程/">编程</a>&nbsp;/&nbsp;<a class="has-link-grey -link" href="/categories/编程/数据库/">数据库</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 382 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/04/03/EFCore数据库反向工程/">EFCore数据库反向工程</a>
+            
+        </h1>
+        <div class="content">
+            <p>之前的大数据比赛取消了，就去弄了另外一个项目。</p>
+<p>程序是师兄写的，但是后台数据库不见了，只能自己生成一个数据库来测试，有一个特点是程序运行时会自动生成空的数据表，这样就不用很麻烦的对着java的代码复现数据表结构（ef真香），在写爬虫找数据的时候就想着，能不能用程序把这些表变成实体类呢，网上找了一番，找到了解决方法就重新整理一下记录下了。</p>
+<p>源链接:<a href="https://www.cnblogs.com/qidakang/p/11302327.html" target="_blank" rel="noopener">https://www.cnblogs.com/qidakang/p/11302327.html</a></p>
+<p>打开VS，新建一个工程，然后安装如下的包</p>
+<p>反向MySQL数据库就安装:</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MySql.Data.EntityFrameworkCore</span><br><span class="line">Pomelo.EntityFrameworkCore.MySql</span><br><span class="line">Microsoft.EntityFrameworkCore.Tools</span><br><span class="line">Microsoft.VisualStudio.Web.CodeGeneration.Design</span><br></pre></td></tr></table></figure>
+
+<p>反向SqlServer数据库就安装:</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.EntityFrameworkCore</span><br><span class="line">Microsoft.EntityFrameworkCore.SqlServer</span><br><span class="line">Microsoft.EntityFrameworkCore.Tools</span><br><span class="line">Microsoft.VisualStudio.Web.CodeGeneration.Design</span><br></pre></td></tr></table></figure>
+
+<p>安装好后打开[程序包控制台]，接着输入</p>
+<p>MySQL版本：</p>
+<figure class="highlight powershell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">第一次生成实体类：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span>Pomelo.EntityFrameworkCore.MySql -OutputDir Models</span><br><span class="line">更新实体类：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span> Pomelo.EntityFrameworkCore.MySql -OutputDir Models -Force</span><br></pre></td></tr></table></figure>
+
+<p>SqlServer版本：</p>
+<figure class="highlight powershell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">第一次生成实体：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span>Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models</span><br><span class="line">更新实体类：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span>Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force</span><br></pre></td></tr></table></figure>
+
+<p>运行后会多出一个Models文件夹，里面就是这个数据库的所有表</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
 
 
 </div>
