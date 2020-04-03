@@ -2,22 +2,23 @@
 <html lang="zh">
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-<title>分类: 服务器 - 依然划水Blog</title>
+<title>EFCore数据库反向工程 - 依然划水Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="好康的、好玩的、有趣的">
-<meta property="og:type" content="website">
-<meta property="og:title" content="依然划水Blog">
-<meta property="og:url" content="127.0.0.1/categories/服务器/index.html">
+    <meta name="description" content="之前的大数据比赛取消了，就去弄了另外一个项目。 程序是师兄写的，但是后台数据库不见了，只能自己生成一个数据库来测试，有一个特点是程序运行时会自动生成空的数据表，这样就不用很麻烦的对着java的代码复现数据表结构（ef真香），在写爬虫找数据的时候就想着，能不能用程序把这些表变成实体类呢，网上找了一番，找到了解决方法就重新整理一下记录下了。 源链接:https://www.cnblogs.com/qi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EFCore数据库反向工程">
+<meta property="og:url" content="127.0.0.1/2020/04/03/EFCore数据库反向工程/index.html">
 <meta property="og:site_name" content="依然划水Blog">
-<meta property="og:description" content="好康的、好玩的、有趣的">
+<meta property="og:description" content="之前的大数据比赛取消了，就去弄了另外一个项目。 程序是师兄写的，但是后台数据库不见了，只能自己生成一个数据库来测试，有一个特点是程序运行时会自动生成空的数据表，这样就不用很麻烦的对着java的代码复现数据表结构（ef真香），在写爬虫找数据的时候就想着，能不能用程序把这些表变成实体类呢，网上找了一番，找到了解决方法就重新整理一下记录下了。 源链接:https://www.cnblogs.com/qi">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="/images/og_image.png">
+<meta property="og:updated_time" content="2020-04-03T10:42:18.026Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="依然划水Blog">
-<meta name="twitter:description" content="好康的、好玩的、有趣的">
+<meta name="twitter:title" content="EFCore数据库反向工程">
+<meta name="twitter:description" content="之前的大数据比赛取消了，就去弄了另外一个项目。 程序是师兄写的，但是后台数据库不见了，只能自己生成一个数据库来测试，有一个特点是程序运行时会自动生成空的数据表，这样就不用很麻烦的对着java的代码复现数据表结构（ef真香），在写爬虫找数据的时候就想着，能不能用程序把这些表变成实体类呢，网上找了一番，找到了解决方法就重新整理一下记录下了。 源链接:https://www.cnblogs.com/qi">
 <meta name="twitter:image" content="/images/og_image.png">
 
 
@@ -92,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="https://avatars1.githubusercontent.com/u/29174785?s=32" alt="依然划水Blog" height="28">
+                <img src="https://avatars1.githubusercontent.com/u/29174785?s=32" alt="EFCore数据库反向工程" height="28">
             
             </a>
         </div>
@@ -127,34 +128,18 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
-    <div class="card-content">
-        <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-            <li><a href="/categories">分类</a></li>
-            
-            <li class="is-active"><a href="#" aria-current="page">服务器</a></li>
-        </ul>
-        </nav>
-    </div>
-</div>
-
-    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-02-27T04:21:00.000Z">2020-02-27</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/服务器/">服务器</a>
-                </div>
+                <time class="level-item has-text-grey" datetime="2020-04-03T10:28:52.000Z">2020-04-03</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 读完 (大约 76 个字)
+                    3 分钟 读完 (大约 382 个字)
                 </span>
                 
                 
@@ -163,22 +148,36 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/02/27/winserver2008的任务计划特性/">记：winserver2008 的任务计划特性</a>
+                EFCore数据库反向工程
             
         </h1>
         <div class="content">
-            <p>winserver2008 中任务计划程序运行程序时，程序的运行路径不是指定的路径下，而是 c:\Windows\system32\下</p>
-<p>解决办法</p>
-<ol>
-<li><p>文件放到 system32 中执行。</p>
-</li>
-<li><p>写一个 bat 将计划中操作指向 bat 文件，bat 文件先 cd 再执行程序。</p>
-</li>
-</ol>
+            <p>之前的大数据比赛取消了，就去弄了另外一个项目。</p>
+<p>程序是师兄写的，但是后台数据库不见了，只能自己生成一个数据库来测试，有一个特点是程序运行时会自动生成空的数据表，这样就不用很麻烦的对着java的代码复现数据表结构（ef真香），在写爬虫找数据的时候就想着，能不能用程序把这些表变成实体类呢，网上找了一番，找到了解决方法就重新整理一下记录下了。</p>
+<p>源链接:<a href="https://www.cnblogs.com/qidakang/p/11302327.html" target="_blank" rel="noopener">https://www.cnblogs.com/qidakang/p/11302327.html</a></p>
+<p>打开VS，新建一个工程，然后安装如下的包</p>
+<p>反向MySQL数据库就安装:</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">MySql.Data.EntityFrameworkCore</span><br><span class="line">Pomelo.EntityFrameworkCore.MySql</span><br><span class="line">Microsoft.EntityFrameworkCore.Tools</span><br><span class="line">Microsoft.VisualStudio.Web.CodeGeneration.Design</span><br></pre></td></tr></table></figure>
+
+<p>反向SqlServer数据库就安装:</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Microsoft.EntityFrameworkCore</span><br><span class="line">Microsoft.EntityFrameworkCore.SqlServer</span><br><span class="line">Microsoft.EntityFrameworkCore.Tools</span><br><span class="line">Microsoft.VisualStudio.Web.CodeGeneration.Design</span><br></pre></td></tr></table></figure>
+
+<p>安装好后打开[程序包控制台]，接着输入</p>
+<p>MySQL版本：</p>
+<figure class="highlight powershell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">第一次生成实体类：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span>Pomelo.EntityFrameworkCore.MySql -OutputDir Models</span><br><span class="line">更新实体类：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span> Pomelo.EntityFrameworkCore.MySql -OutputDir Models -Force</span><br></pre></td></tr></table></figure>
+
+<p>SqlServer版本：</p>
+<figure class="highlight powershell hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">第一次生成实体：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span>Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models</span><br><span class="line">更新实体类：</span><br><span class="line">Scaffold-DbContext <span class="hljs-string">"Server=127.0.0.1;port=3306;Database=db; User=root;Password=root;"</span>Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Force</span><br></pre></td></tr></table></figure>
+
+<p>运行后会多出一个Models文件夹，里面就是这个数据库的所有表</p>
 
         </div>
         
         
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
         
     </div>
 </div>
@@ -187,7 +186,19 @@
 
 
 
-
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/11/Windows10下使用IDEA配置Spark的Debug环境/">
+                <span class="level-item">Windows10 下使用 IDEA 配置 Spark 的 Debug 环境</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
 
 
 </div>
@@ -595,7 +606,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="https://avatars1.githubusercontent.com/u/29174785?s=32" alt="依然划水Blog" height="28">
+                    <img src="https://avatars1.githubusercontent.com/u/29174785?s=32" alt="EFCore数据库反向工程" height="28">
                 
                 </a>
                 <p class="is-size-7">
