@@ -133,6 +133,57 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-05-10T04:17:00.000Z">2020-05-10</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/调试/">调试</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 239 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/05/10/用VUE时遇到关于符号连接的一个BUG/">使用VUE时遇到关于符号连接的一个BUG</a>
+            
+        </h1>
+        <div class="content">
+            <p>最近准备试一下ABP框架做个vue的spa应用，按着教程一步步走下去，走到运行yarn serve就报了如下错误</p>
+<p><img src="https://raw.githubusercontent.com/MisakaWater/MisakaWater.github.io.data/master/img/image-20200510125747213.png" alt="image-20200510125747213"></p>
+<p>网上查了一下以为是某些插件没装好，不过转念想想ABP这么牛的框架不会吧不会吧不会吧。</p>
+<p>很奇怪的是把vue复制到其他文件夹可以正常运行，唯独在source文件夹里面不能正常运行，Google了一早上后打算不用vue，最后再仔细看了一下返回的报错</p>
+<p><img src="https://raw.githubusercontent.com/MisakaWater/MisakaWater.github.io.data/master/img/image-20200510130010805.png" alt="image-20200510130010805"></p>
+<p>才想起来source文件夹因为之前C盘空间不够移到D盘在mklink回C盘的，导致在C盘开Power shell运行D盘的文件就会报错。</p>
+<h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>在D盘开Power shell运行yarn serve即可</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-04-03T10:28:00.000Z">2020-04-03</time>
                 
                 <div class="level-item">
@@ -581,7 +632,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        6
+                        7
                     </p>
                 </div>
             </div>
@@ -591,7 +642,7 @@
                         分类
                     </p>
                     <p class="title has-text-weight-normal">
-                        4
+                        5
                     </p>
                 </div>
             </div>
@@ -601,7 +652,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        19
+                        22
                     </p>
                 </div>
             </div>
@@ -643,6 +694,19 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-05-10T04:17:00.000Z">2020-05-10</time></div>
+                    <a href="/2020/05/10/用VUE时遇到关于符号连接的一个BUG/" class="has-link-black-ter is-size-6">使用VUE时遇到关于符号连接的一个BUG</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/调试/">调试</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -696,19 +760,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-07-21T14:50:00.000Z">2019-07-21</time></div>
-                    <a href="/2019/07/21/JS实现URL变换/" class="has-link-black-ter is-size-6">JS 实现 URL 变换</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/编程/">编程</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -753,7 +804,15 @@
             <span class="level-end">
                 <span class="level-item tag">1</span>
             </span>
-        </a></li></ul></li>
+        </a></li></ul></li><li>
+        <a class="level is-marginless" href="/categories/调试/">
+            <span class="level-start">
+                <span class="level-item">调试</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li>
             </ul>
         </div>
     </div>
@@ -766,6 +825,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/04/">
@@ -871,6 +941,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/Windows/">
+                        <span class="tag">Windows</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/Windows-Server/">
                         <span class="tag">Windows Server</span>
                         <span class="tag is-grey">1</span>
@@ -908,6 +985,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/spark/">
                         <span class="tag">spark</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/vue/">
+                        <span class="tag">vue</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -958,6 +1042,13 @@
                     <a class="tags has-addons" href="/tags/照片/">
                         <span class="tag">照片</span>
                         <span class="tag is-grey">2</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/符号连接/">
+                        <span class="tag">符号连接</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
