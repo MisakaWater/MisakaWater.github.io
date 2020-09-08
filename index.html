@@ -133,6 +133,58 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-09-08T12:30:00.000Z">2020-09-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/服务器/">服务器</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 分钟 读完 (大约 284 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/09/08/装与配置docker/">安装与配置docker</a>
+            
+        </h1>
+        <div class="content">
+            <p>系统用的是ubuntu16.04，过程参考官方文档<a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/ubuntu/</a></p>
+<p>这里只记录一下坑和小技巧</p>
+<h2 id="别换源"><a href="#别换源" class="headerlink" title="别换源"></a>别换源</h2><h3 id="先使用系统自带源，别着急换国内源"><a href="#先使用系统自带源，别着急换国内源" class="headerlink" title="先使用系统自带源，别着急换国内源"></a>先使用系统自带源，别着急换国内源</h3><p>之前安装docker换源后执行到下面的命令会报错，提示找不到docker的安装包</p>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io</span><br></pre></td></tr></table></figure>
+
+<p>这里我的解决方法是</p>
+<p>开tsocks，使用官方源来安装docker</p>
+<h2 id="修改docker仓库源"><a href="#修改docker仓库源" class="headerlink" title="修改docker仓库源"></a>修改docker仓库源</h2><p>安装完成后直接奔着 <a href="https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors" target="_blank" rel="noopener">https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors</a> 阿里的镜像去，感觉比其他的仓库源好用</p>
+<h2 id="有用的命令"><a href="#有用的命令" class="headerlink" title="有用的命令"></a>有用的命令</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#查看运行的容器</span></span><br><span class="line">docker ps</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#退出并在后台运行</span></span><br><span class="line">Ctrl + P + Q </span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#进入容器</span></span><br><span class="line">docker attach [CONTAINER ID]</span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#-v挂载</span></span><br><span class="line"><span class="hljs-comment">#譬如我要启动一个centos容器，宿主机的/test目录挂载到容器的/soft目录，可通过以下方式指定：</span></span><br><span class="line">docker run -it -v /<span class="hljs-built_in">test</span>:/soft centos /bin/bash</span><br><span class="line"><span class="hljs-comment">#冒号":"前面的目录是宿主机目录，后面的目录是容器内目录。</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-comment">#进入docker交互模式</span></span><br><span class="line">sudo docker <span class="hljs-built_in">exec</span> -it [CONTAINER ID] /bin/bash</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
                 <time class="level-item has-text-grey" datetime="2020-05-10T04:17:00.000Z">2020-05-10</time>
                 
                 <div class="level-item">
@@ -584,7 +636,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        6
+                        7
                     </p>
                 </div>
             </div>
@@ -604,7 +656,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        20
+                        23
                     </p>
                 </div>
             </div>
@@ -640,6 +692,19 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-09-08T12:30:00.000Z">2020-09-08</time></div>
+                    <a href="/2020/09/08/装与配置docker/" class="has-link-black-ter is-size-6">安装与配置docker</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/服务器/">服务器</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -693,19 +758,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-19T09:07:00.000Z">2020-02-19</time></div>
-                    <a href="/2020/02/19/将堆栈星轨变成一段流星雨视频/" class="has-link-black-ter is-size-6">将堆栈星轨变成一段流星雨视频</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/摄影/">摄影</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -732,7 +784,7 @@
                 <span class="level-item">服务器</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/编程/">
@@ -771,6 +823,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/09/">
+                <span class="level-start">
+                    <span class="level-item">九月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/05/">
@@ -890,6 +953,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/docker/">
+                        <span class="tag">docker</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/hadoop/">
                         <span class="tag">hadoop</span>
                         <span class="tag is-grey">1</span>
@@ -967,6 +1037,13 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/服务器/">
+                        <span class="tag">服务器</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/照片/">
                         <span class="tag">照片</span>
                         <span class="tag is-grey">1</span>
@@ -976,6 +1053,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/符号连接/">
                         <span class="tag">符号连接</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/调试/">
+                        <span class="tag">调试</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
